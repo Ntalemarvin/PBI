@@ -1,0 +1,24 @@
+
+https://mtncloud-my.sharepoint.com/:x:/g/personal/marvin_ntale_mtn_com/
+
+https://mtncloud-my.sharepoint.com/personal/marvin_ntale_mtn_com/Documents/Attachments/RealTime.xlsx
+https://mtncloud-my.sharepoint.com/personal/marvin_ntale_mtn_com/Documents/Attachments/RealTime.xlsx?web=1
+https://mtncloud-my.sharepoint.com/personal/marvin_ntale_mtn_com/Documents/MasterProject/MasterProject/OfficeInternet60523-300523.xlsx
+
+IF(ISBLANK(),0,())
+(COUNTROWS(FILTER('FTTO60523-300523', 'FTTO60523-300523'[On-air status] = "Office Internet (on air)")))
+
+COUNTROWS(FILTER('FTTO60523-300523','FTTO60523-300523'[Remarks] = "ROW"))
+SumOfBlanks = CALCULATE(COUNTBLANK('YourTableName'[YourColumnName]))
+
+ROW-O = 
+IF(
+    ISBLANK(
+        COUNTROWS(FILTER('FTTO60523-300523','FTTO60523-300523'[Remarks] = "ROW"))
+    ),
+    0,
+    COUNTROWS(FILTER('FTTO60523-300523','FTTO60523-300523'[Remarks] = "ROW"))
+)
+
+
+SumCounts = [Count] + [CountH]
